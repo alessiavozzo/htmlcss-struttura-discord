@@ -1,0 +1,90 @@
+/* #region Color Palette */
+:root{
+    --bool-header-background:rgba(173, 216, 230, 1);
+    --bool-header-items: rgba(218, 165, 32, 1);
+    --bool-main-section-banner: rgba(0, 0, 139, 1);
+    --bool-banner: rgba(238, 130, 238, 1);
+    --bool-main-section-light:rgba(211, 211, 211, 1);
+    --bool-main-section-dark: rgba(127, 126, 123, 0.44375);
+    --bool-container: red;
+    --bool-container-img:rgba(30, 144, 255, 1);
+    --bool-container-text:rgba(255, 192, 203, 1);
+    --bool-bottom-container:rgba(34, 139, 34, 1);
+    --bool-footer-background: rgba(35, 39, 42, 1);
+    --bool-footer-top-social-items:rgba(32, 178, 170, 1);
+    --bool-footer-top-info-items:rgba(240, 128, 128, 1);
+    --bool-footer-bottom: rgba(127, 255, 212, 1);
+    --bool-footer-bottom-items: rgba(255, 182, 193, 1);
+}
+/* #endregion Color Palette */
+
+/* #region debug */
+
+#site_header.debug{
+    height: 50px;
+}
+
+#site_main.debug{
+    height: 1000px;
+}
+
+#site_footer.debug{
+    height: 300px;
+}
+
+/* #endregion debug */
+
+/* Common rules */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* #region Header */
+
+header{
+    background-color: var(--bool-header-background);
+    display: flex;
+}
+
+header > .container{
+    background-color: var(--bool-header-items);
+    border: 1px black dotted;
+}
+
+.logo, .login{
+    flex-grow: 1;
+}
+
+nav{
+    flex-grow: 2;
+    text-align: center;
+}
+
+.logo, .login, nav{
+    padding: 0.2rem;
+    border: 1px dotted black;
+}
+
+/* #endregion Header */
+
+/* Main */
+
+main{
+    background-color: yellow;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--bool-footer-background)
+}
