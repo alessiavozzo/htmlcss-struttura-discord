@@ -11,8 +11,8 @@
     --bool-container-text:rgba(255, 192, 203, 1);
     --bool-bottom-container:rgba(34, 139, 34, 1);
     --bool-footer-background: rgba(35, 39, 42, 1);
-    --bool-footer-top-social-items:rgba(32, 178, 170, 1);
-    --bool-footer-top-info-items:rgba(240, 128, 128, 1);
+    --bool-footer-top-social-items:rgba(240, 128, 128, 1);
+    --bool-footer-top-info-items:rgba(32, 178, 170, 1);
     --bool-footer-bottom: rgba(127, 255, 212, 1);
     --bool-footer-bottom-items: rgba(255, 182, 193, 1);
 }
@@ -174,7 +174,20 @@ footer{
     height: 85%;
     border-bottom: 1px solid grey;
     margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
     display: flex;
+}
+
+#social{
+    background-color: var(--bool-footer-top-social-items);
+    width: 30%;
+    border: 1px dotted black;
+}
+
+.info{
+    background-color: var(--bool-footer-top-info-items);
+    width: calc(70% / 4);
+    border: 1px dotted white;
 }
 
 /* Footer bottom */
